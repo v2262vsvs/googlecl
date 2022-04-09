@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import {ViewGridIcon,MicrophoneIcon,SearchIcon} from "@heroicons/react/solid"
-import Footer from "../components/Footer"
 import {useRef,useState} from "react"
 import {useRouter} from "next/router"
 
@@ -169,7 +168,6 @@ export default function Home() {
 
       </form>
       {/* Footer */}
-      <Footer/>
     </div>
   )
 }

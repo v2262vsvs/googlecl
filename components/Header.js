@@ -17,7 +17,7 @@ function Header() {
 
     const search = event => {
         event.preventDefault();
-        const term = searchInputRef.current.value
+        const term = searchInputRef?.current.value
         console.log(term)
         if (!term) return;
 
@@ -40,7 +40,7 @@ function Header() {
                     
                     <form className='flex flex-grow  border border-gray-200 rounded-full   py-3  shadow-lg max-w-3xl items-center mr-44'>
                         <input
-                            placeholder={searchInputRef.current.value}
+                            placeholder={router.query.term}
                             ref={searchInputRef}
                             className=" px-6 rounded-full flex-grow mx-auto w-full focus:outline-none "
                             type="text"

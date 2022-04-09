@@ -4,9 +4,9 @@ import Paggination from "./Paggination"
 function SearchResult({results}) {
   return (
     <div className='mx-auto w-full px-3 sm:pl-[%5] md:pl=[%15] lg:pl-72 '>
-       <p className='text-gray-600 text-xs mb-5 mt-3 '>About {results.searchInformation?.formattedTotalResults} results( {results.searchInformation?.formattedSearchTime} seconds)</p>
+       <p className='text-gray-600 text-xs mb-5 mt-3 '>About {results && results.searchInformation?.formattedTotalResults} results( {results.searchInformation?.formattedSearchTime} seconds)</p>
 
-       {results.items?.map((result) => (
+       {results && results.items?.map((result) => (
             <div key={result.link} className='max-w-xl mb-8'>
                 <div className='group'>
                     <a href={result.link} className='text-sm'>
