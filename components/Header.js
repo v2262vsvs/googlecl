@@ -33,6 +33,7 @@ function Header() {
                         src={"https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"}
                         height={20}
                         width={100}
+                        alt=""
                         className="cursor-pointer flex "
                         onClick={handleClick}
                     />
