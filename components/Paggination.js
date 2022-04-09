@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import React from 'react'
-import Link from "next/Link"
+import Link from "next/link"
 import {ChevronRightIcon, ChevronLeftIcon} from "@heroicons/react/solid"
 
 function Paggination() {
