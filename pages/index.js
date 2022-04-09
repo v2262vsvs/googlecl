@@ -34,13 +34,27 @@ export default function Home() {
           <p className="hover:underline cursor-pointer ">Gmail</p>
           <p className="hover:underline cursor-pointer ">Images</p>
           <ViewGridIcon className="w-10 h-10 text-gray-700 p-2 cursor-pointer hover:scale-110 hover:bg-gray-300 rounded-full"/>
-          <img src="/userlogo.png" loading="lazy"  alt="profilepic" className="rounded-full w-10 h-10 cursor-pointer duration-150 transform hover:scale-110" />
+          <Image
+            src="/userlogo.png"
+            loading="lazy"  
+            alt="profilepic" 
+            width={40}
+            height={40}
+            className="rounded-full  cursor-pointer duration-150 transform hover:scale-110"
+          />
         </div>
 
       </header>
       {/* Main */}
       <form className="flex flex-grow mt-32  items-center text-center flex-col">  
-        <img src="/2.gif" className="w-100 h-40 "/>
+        <Image
+            src="/2.gif"
+            loading="lazy"  
+            alt="profilepic" 
+            width={400}
+            height={160}
+            className="rounded-full   duration-150 transform hover:scale-110"
+          />
 
         <div className="flex rouned-xl w-full space-x-2 p-5 rounded-full  items-center mt-5 lg:max-w-2xl max-w-md border border-gray-200 px-5 py-3 shadow-md  sm:max-w-xl">
           <SearchIcon className="h-5 mr-3  text-gray-500 flex "/>
@@ -58,40 +72,95 @@ export default function Home() {
         <div className='flex flex-col mt-5'> 
           <div className='   items-center grid sm:grid-cols-5  grid-cols-3  '>
             <div className='flex flex-col items-center p-6  cursor-pointer hover:bg-gray-200 rounded-lg'>
-              <img src="/5.png" width={40} height={40} clasname="flex rounded-full bg-gray-100"/>
+              <Image
+                src="/5.png"
+                loading="lazy"  
+                alt="profilepic" 
+                width={40} height={40}
+                clasName="flex rounded-full bg-gray-100"
+              />
               <p className='text-sm mt-3 flex'>Youtube</p>
             </div>
             <div className='flex flex-col items-center p-6  cursor-pointer hover:bg-gray-200 rounded-lg'>
-              <img src="/fblogo.png" width={35} height={35} className="flex rounded-full bg-gray-100"/>
+            <Image
+                src="/fblogo.png"
+                loading="lazy"  
+                alt="profilepic" 
+                width={40} height={40}
+                clasName="flex rounded-full bg-gray-100"
+              />
               <p className='text-sm mt-3 flex'>Facebook</p>
             </div>
             <div className='flex flex-col items-center p-6  cursor-pointer hover:bg-gray-200 rounded-lg'>
-              <img src="/logo.png" width={35} height={35} className="flex rounded-full bg-gray-100"/>
+              <Image
+                src="/logo.png"
+                loading="lazy"  
+                alt="profilepic" 
+                width={40} height={40}
+                clasName="flex rounded-full bg-gray-100"
+              />
               <p className='text-sm mt-3 flex'>Manager.com</p>
             </div>
             <div className='flex flex-col items-center p-6  cursor-pointer hover:bg-gray-200 rounded-lg'>
-              <img src="/6.jpeg" width={35} height={35} className="flex rounded-full bg-gray-100"/>
+              <Image
+                src="/6.jpeg"
+                loading="lazy"  
+                alt="profilepic" 
+                width={40} height={40}
+                clasName="flex rounded-full bg-gray-100"
+              />
               <p className='text-sm mt-3 flex'>Spotify</p>
             </div>
             <div className='flex flex-col items-center p-6  cursor-pointer hover:bg-gray-200 rounded-lg'>
-              <img src="/7.png" width={35} height={35} className="flex rounded-full bg-gray-100"/>
+            <Image
+                src="/7.png"
+                loading="lazy"  
+                alt="profilepic" 
+                width={40} height={40}
+                clasName="flex rounded-full bg-gray-100"
+              />
               <p className='text-sm mt-3 flex'>Vercel</p>
             </div>
           
             <div className='flex flex-col items-center p-6  cursor-pointer hover:bg-gray-200 rounded-lg'>
-              <img src="/7.png" width={35} height={35} className="flex rounded-full bg-gray-100"/>
+            <Image
+                src="/7.png"
+                loading="lazy"  
+                alt="profilepic" 
+                width={40} height={40}
+                clasName="flex rounded-full bg-gray-100"
+              />
+
               <p className='text-sm mt-3 flex'>Vercel</p>
             </div>
             <div className='flex flex-col items-center p-6  cursor-pointer hover:bg-gray-200 rounded-lg'>
-              <img src="/5.png" width={40} height={40} clasname="flex rounded-full bg-gray-100"/>
+              <Image
+                src="/5.png"
+                loading="lazy"  
+                alt="profilepic" 
+                width={40} height={40}
+                clasName="flex rounded-full bg-gray-100"
+              />
               <p className='text-sm mt-3 flex'>Youtube</p>
             </div>
             <div className='flex flex-col items-center p-6  cursor-pointer hover:bg-gray-200 rounded-lg'>
-              <img src="/fblogo.png" width={35} height={35} className="flex rounded-full bg-gray-100"/>
+              <Image
+                src="/fblogo.png"
+                loading="lazy"  
+                alt="profilepic" 
+                width={40} height={40}
+                clasName="flex rounded-full bg-gray-100"
+              />
               <p className='text-sm mt-3 flex'>Facebook</p>
             </div>
             <div className='flex flex-col items-center p-6  cursor-pointer hover:bg-gray-200 rounded-lg'>
-              <img src="/7.png" width={35} height={35} className="flex rounded-full bg-gray-100"/>
+              <Image
+                src="/7.png"
+                loading="lazy"  
+                alt="profilepic" 
+                width={40} height={40}
+                clasName="flex rounded-full bg-gray-100"
+              />
               <p className='text-sm mt-3 flex'>Vercel</p>
             </div>
             

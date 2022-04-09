@@ -61,7 +61,14 @@ function Header() {
                         <p className="hidden md:inline-flex hover:underline cursor-pointer ">Gmail</p>
                         <p className="hidden md:inline-flex hover:underline cursor-pointer ">Images</p>
                         <ViewGridIcon className="hidden sm:inline-flex w-10 h-10 text-gray-700 p-2 cursor-pointer hover:scale-110 hover:bg-gray-300 rounded-full" />
-                        <img src={'https://avatars.githubusercontent.com/u/61426238?s=40&v=4'} loading="lazy" alt="profilepic" className="rounded-full w-10 h-10 cursor-pointer duration-150 transform hover:scale-110" />
+                        <Image
+                        src={'https://avatars.githubusercontent.com/u/61426238?s=40&v=4'}
+                        height={40}
+                        width={40}
+                        loading="lazy" 
+                        alt="profilepic" 
+                        className="rounded-full  cursor-pointer duration-150 transform hover:scale-110"
+                    />
                     </div>
                 </div>
 
