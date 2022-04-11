@@ -27,18 +27,21 @@ function Header() {
     return (
         <div>
             <header className='sticky top-0  w-full border-b-2 b border-gray-100 '>
-                <div className='bg-white space-x-2  flex items-center justify-between p-6 w-full  text-sm text-gray-700'>
-                    <div className='flex flex-grow space-x-5'>
+                <div className='bg-white space-x-2  flex items-center justify-between p-6 w-full  text-sm text-gray-700 '>
+                    <div className=' hidden sm:inline-block '>
                     <Image
                         src={"https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"}
-                        height={20}
+                        height={40}
                         width={100}
                         alt=""
                         className="cursor-pointer flex "
                         onClick={handleClick}
                     />
+                    </div>
+                    <div className='flex  space-x-5  w-3/4 pl-0 lg:pl-36'>
                     
-                    <form className='flex flex-grow  border border-gray-200 rounded-full   py-3  shadow-lg max-w-3xl items-center mr-44'>
+                    
+                    <form className=' flex flex-grow  border border-gray-200 rounded-full    py-3  shadow-lg max-w-3xl items-center  mr-0 sm:mr-10 '>
                         <input
                             placeholder={router.query.term}
                             ref={searchInputRef}
@@ -55,9 +58,6 @@ function Header() {
                     </form>
                     </div>
                    
-
-
-
                     <div className=" flex flex-right space-x-4 items-center ">
                         <p className="hidden md:inline-flex hover:underline cursor-pointer ">Gmail</p>
                         <p className="hidden md:inline-flex hover:underline cursor-pointer ">Images</p>
